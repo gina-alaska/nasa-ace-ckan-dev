@@ -28,6 +28,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.json = {
+      ckan: {
+        site_url: "http://192.168.0.17"
+      },
       postgresql: {
         password: {
           postgres: "devbox-password"
