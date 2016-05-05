@@ -35,13 +35,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         password: {
           postgres: "devbox-password"
         }
+      },
+      java: {
+        jdk_version: '7'
+      },
+      solr: {
+        data_dir: '/opt/solr-4.10.4/example/solr'
       }
     }
 
     chef.run_list = [
       "postgresql::server",
       "solr::default",
-      "nace-ckan::default"
+      "nace-ckan::default",
+      "nace-dev::default"
     ]
   end
 end

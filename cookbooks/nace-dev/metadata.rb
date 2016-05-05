@@ -1,0 +1,10 @@
+name 'nace-dev'
+maintainer 'UAF GINA'
+maintainer_email 'support+chef@gina.alaska.edu'
+license 'mit'
+description 'Installs/Configures nace-dev'
+long_description 'Installs/Configures nace-dev'
+version '0.1.0'
+
+depends 'database'
+depends 'postgresql'
