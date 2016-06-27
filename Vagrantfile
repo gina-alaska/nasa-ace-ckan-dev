@@ -9,14 +9,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = 'nace-dev'
 
   if Vagrant.has_plugin?("vagrant-omnibus")
-    config.omnibus.chef_version = 'latest'
+    config.omnibus.chef_version = '12.10.24'
   end
 
   config.vm.box = 'opscode-ubuntu-14.04'
   config.vm.box_url = 'http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box'
 
   config.vm.network :private_network, ip: "192.168.0.17"
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  config.vm.network "forwarded_port", guest: 8080, host: 8080
+
+  config.vm.synced_folder "ckanext-nasa_ace", "/usr/lib/ckan/default/src/ckanext-nasa_ace"
 
   config.vm.provider :virtualbox do |vb|
     # Use VBoxManage to customize the VM. For example to change memory:

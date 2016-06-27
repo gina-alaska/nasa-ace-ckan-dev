@@ -10,6 +10,7 @@ Clone this repository
 
 ```
 cd nasa-ace-ckan-dev
+git clone https://github.alaska.edu/gina/ckanext-nasa_ace.git
 vagrant up
 ```
 
