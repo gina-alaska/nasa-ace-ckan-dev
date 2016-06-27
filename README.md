@@ -6,11 +6,10 @@ TODO: Enter the cookbook description here.
 
 CKAN Documentation: http://docs.ckan.org/en/latest/
 
-Clone this repository
+Clone this repository using: `git clone --recursive https://github.alaska.edu/gina/nasa-ace-ckan-dev.git`
 
 ```
 cd nasa-ace-ckan-dev
-git clone https://github.alaska.edu/gina/ckanext-nasa_ace.git
 vagrant up
 ```
 
