@@ -1,3 +1,0 @@
-[submodule "ckanext-nasa_ace"]
-	path = ckanext-nasa_ace
-	url = git@github.alaska.edu:gina/ckanext-nasa_ace.git
