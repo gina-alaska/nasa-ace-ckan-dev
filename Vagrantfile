@@ -58,9 +58,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     }
 
     chef.run_list = [
-      "postgresql::server",
-      "solr::default",
-      "nace-ckan::development"
+      "nace-ckan::database_server",
+      "nace-ckan::solr",
+      "nace-ckan::default"
     ]
   end
 end
