@@ -1,3 +1,6 @@
 [submodule "ckanext-nasa_ace"]
 	path = ckanext-nasa_ace
 	url = https://github.com/gina-alaska/ckanext-nasa_ace.git
+[submodule "ckanext-group_private_datasets"]
+	path = ckanext-group_private_datasets
+	url = https://github.com/gina-alaska/ckanext-group_private_datasets.git

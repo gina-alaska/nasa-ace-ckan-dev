@@ -21,6 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "forwarded_port", guest: 5000, host: 5000
 
   config.vm.synced_folder "ckanext-nasa_ace", "/usr/lib/ckan/default/src/ckanext-nasa_ace"
+  config.vm.synced_folder "ckanext-group_private_datasets", "/usr/lib/ckan/default/src/ckanext-group_private_datasets"
 
   config.vm.provider :virtualbox do |vb|
     # Use VBoxManage to customize the VM. For example to change memory:
