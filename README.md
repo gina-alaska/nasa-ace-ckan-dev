@@ -1,14 +1,25 @@
 # nace-dev
 
-TODO: Enter the cookbook description here.
+CKAN Documentation: http://docs.ckan.org/en/latest/
+
+## Dependencies
+
+* vagrant
+* virtualbox
+* git
 
 ## Getting started
 
-CKAN Documentation: http://docs.ckan.org/en/latest/
-
-Clone this repository using: `git clone --recursive https://github.alaska.edu/gina/nasa-ace-ckan-dev.git`
+Install vagrant plugins
 
 ```
+vagrant plugin install vagrant-omnibus vagrant-berkshelf vagrant-share
+```
+
+Clone this repository and start vm
+
+```
+git clone --recursive https://github.alaska.edu/gina/nasa-ace-ckan-dev.git
 cd nasa-ace-ckan-dev
 vagrant up
 ```
