@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = 'nace-dev'
 
   if Vagrant.has_plugin?("vagrant-omnibus")
-    config.omnibus.chef_version = '12.16.31'
+    config.omnibus.chef_version = '12.18.31'
   end
 
   config.vm.box = 'opscode-ubuntu-14.04'
