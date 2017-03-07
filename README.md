@@ -25,6 +25,7 @@ Clone this repository and start vm
 ```
 git clone --recursive https://github.alaska.edu/gina/nasa-ace-ckan-dev.git
 cd nasa-ace-ckan-dev
+touch .mapbox_token # this needs to be updated with the token but for now creating the token will be enough
 vagrant up
 ```
 
